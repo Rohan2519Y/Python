@@ -135,6 +135,40 @@
 
 
 #15###################################################
-def add_tag(i,a):
-    print()
-add_tag(2,3)
+# def add_tag(i,a):
+#     print('<',i,'>',a,'<',i,'>',sep='')
+# add_tag('i','Python')
+
+
+
+#16###################################################
+# def insert_sting_middle(i,a):
+#     print(i[:int((len(i))/2)],a,i[int((len(i))/2):],sep='')
+# insert_sting_middle('{{{}}}','Python')
+
+
+
+#17###################################################
+# def insert_end(i):
+#     if len(i)<2:
+#         print(i)
+#     else:
+#         print(i[-2:]*4,sep='')
+# insert_end('Python')
+# insert_sting_middle('{{{}}}','Python')
+
+
+
+#18###################################################
+# def first_three(i):
+#     if len(i)<4:
+#         print(i)
+#     else:
+#         print(i[:3],sep='')
+# first_three('Python')
+
+
+
+#19###################################################
+# str='https://www.w3resource.com/python-exercises'
+# print(str.replace(str[(str.rfind('-')):],'',1))
