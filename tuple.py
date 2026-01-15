@@ -41,6 +41,33 @@
 # T1=(12)     #NOT TUPPLE
 # T1=(12,)     
 
-T=(78,25,578)
-l=T.index(74)
-print(l)
+# T=(78,25,578)
+# l=T.index(78)
+# print(l)
+
+# C=('India','UK','Nepal','Lanka')
+# CC=('New Delhi','London','Kathmandu','Colombo')
+# k=input("Enter Country Name : ")
+# print(CC[C.index(k)])
+
+# T=((4,5,6),(1,6,9,4,5),(5,3,6,6,7),(2,2))
+# for i in T:
+#     print(sum(i))
+#     print(max(i))
+
+# T=((4,5,6),(1,6,9,4,5),(5,3,6,6,7),(2,2))
+# for i in T:
+#     a=sorted(i,reverse=True)
+#     ma=max(i)
+#     for i in a :
+#         if i<ma:
+#             print(i)
+#             break
+
+# T='Harry Singh'
+# print(isinstance(T,str))
+
+# T=(89,90,23.4,'Gwalior')
+# for i in T:
+#     if(isinstance(i,int)):
+#         print(i)

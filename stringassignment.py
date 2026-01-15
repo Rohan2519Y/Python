@@ -170,5 +170,26 @@
 
 
 #19###################################################
-# str='https://www.w3resource.com/python-exercises'
-# print(str.replace(str[(str.rfind('-')):],'',1))
+# str='https://www.w3resource.com/python/exercises'
+# char=['-','@','#','$','!','.','/','-']
+# print(str[:max(str.rfind(c) for c in char)])
+
+
+
+#20###################################################
+# def reverse(i):
+#     if((len(i)%4==0)>4):
+#         print(i[::-1])
+#     else:
+#         print(i)
+# reverse('asdfgh')
+
+
+
+#21###################################################
+# def upper_case(i):
+#     if sum(c.isupper() for c in i[:4])>=2:
+#         print(i.upper())
+#     else:
+#         print(i)
+# upper_case('Qwer')
