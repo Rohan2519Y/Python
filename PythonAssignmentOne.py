@@ -95,3 +95,4 @@
 #     if i in str.lower():
 #         c+=1
 # print("there are",c,"different vowels in the string")
+
