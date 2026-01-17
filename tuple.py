@@ -71,3 +71,21 @@
 # for i in T:
 #     if(isinstance(i,int)):
 #         print(i)
+
+# T=((45,34,89,56),(12,37,65,34),(43,50,65,12))
+# for i in T:
+#     for j in i:
+#         print(j,end=' ')
+#     print()
+
+# for i in range(len(T)):
+#     for j in range(len(T[i])):
+#         print(T[i][j],end=' ')
+#     print()
+
+n=int(input("Enter N : "))
+T=()
+for i in range(n):
+    v=int(input("Enter Number : "))
+    T=T+(v,)
+print(T)
