@@ -60,12 +60,15 @@
 
 # print("Count : ",c)
 
+sentence = "as it turned out our aRTHUR BElling was was to change every sunday we ' d hurry along to and Jam ... chance meeting with REverend \ our whole way of life , and \ St lOONY up the Cream BUn \""
 
 
-T="Hello World!"
-K=sorted(T)
-L="".join(K)
-print(L)
+
+
+# T="Hello World!"
+# K=sorted(T)
+# L="".join(K)
+# print(L)
 
 
 

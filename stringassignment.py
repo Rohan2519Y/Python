@@ -20,7 +20,7 @@
 # str=input("Enter Text : ")
 # l=len(str)
 # if l<2:
-#     print(str)
+#     print("Empty String")
 # elif l==2:
 #     print(str,str,sep='')
 # else: 
@@ -38,6 +38,9 @@
 #         w+=str[i]
 # print("Answer : ",w)
 
+# str=input("Enter Text : ")
+# r=str[1:].replace(str[0],'$')
+# print(str[0],r,sep='')
 
 
 #5###################################################
@@ -193,3 +196,7 @@
 #     else:
 #         print(i)
 # upper_case('Qwer')
+
+
+
+#25###################################################
