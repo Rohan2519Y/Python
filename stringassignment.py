@@ -127,12 +127,10 @@
 
 #14###################################################
 # str=input("Enter Text : ").split(',')
-# w=[]
+# w=()
 # for i in str:
-#     if i in w:
-#         ''
-#     else:
-#         w.append(i)
+#     if i not in w:
+#         w+=(i,)
 # print(sorted(w))
 
 

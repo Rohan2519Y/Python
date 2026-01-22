@@ -48,6 +48,7 @@
 # all()    --if nothing is present then false //Non,'',0
 # any()    --if one entry is present then true
 # sorted()   --sorted(k,reverse=True)
+# .format()  j="sum of {} and {} is {}".format(a,b,c)
 
 # x='abc'
 # y='def'
@@ -243,3 +244,11 @@
 # l=k.split()
 # str=" ".join(l)
 # print(str)
+
+
+a=10
+b=10
+c=a+b
+# j="sum of {0} and {0} is {0}".format(a,b,c)
+j="{0:<15.2f}\n{1:^15.2f}\n{2:15.2f}".format(a,b,c)
+print(j)
