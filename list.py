@@ -37,7 +37,7 @@
 
 ##########################################################################################################################################
 # L=[4,5,6,7,'Gwalior',34,(23,45,67),[23,45,67]]
-L=[4,53,26,7,34,82]
+# L=[4,53,26,7,34,82]
 # print(L)
 # del L[5]
 # L[6]='hello'
@@ -51,6 +51,35 @@ L=[4,53,26,7,34,82]
 # T[5]='Morena'
 # T=L.copy()
 # T[5]='Morena'
-L.sort()
-L.sort(reverse=True)
-print(L)
+# L.sort()
+# L.sort(reverse=True)
+# print(L)
+
+
+# n=int(input("Enter Number : "))
+# city=[]
+# for i in range(n):
+#     c=input("Enter City : ")
+#     city.append(c)
+# print(city)
+
+
+# L=[23,45,87,23,56,87,45,12]
+# for i in range(L.count(45)):
+#     L.remove(45)
+# print(L)
+
+
+# L=[[100,'Pepsi',90],[200,'Fanta',120],[300,'7up',140],[400,'Limka',10]]
+# for i in L:
+#     if i[2]>100:
+#         print(i)
+
+
+L=[12,65,76,45,34,23,78,65,12]
+D=[]
+for i in L:
+    if (L.count(i)>1):
+        if i not in D:
+            D.append(i)
+print(D)
