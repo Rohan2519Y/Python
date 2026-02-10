@@ -38,8 +38,7 @@
 # pop(key) remove the values of specified key
 # popitem() remove the last record
 # update()
-# 
-# 
+# set()
 
 
 
@@ -120,3 +119,7 @@
 # print(dict(D))
 
 
+dic={1:30,2:10,3:20}
+temp={}
+for i in range(len(list(dic))):
+    print((dic.items)[i])
