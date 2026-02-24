@@ -81,3 +81,7 @@
 # L=[5,6,7,8,4]
 # search=lambda value_list:[fact(i) for i in value_list]
 # print(search(L))
+
+L=lambda n:[int(input("Enter Number : ")) for i in range(n)]
+T=L(5)
+print(T)
