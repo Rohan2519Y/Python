@@ -79,7 +79,7 @@
 L=[12,65,76,45,34,23,78,65,12]
 D=[]
 for i in L:
-    if (DICTL.count(i)>1):
+    if (L.count(i)>1):
         if i not in D:
             D.append(i)
 print(D)
