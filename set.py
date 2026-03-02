@@ -40,7 +40,8 @@
 # print(t)
 
 
-t1={1,2,3,4,5,6,7,8,9}
+t1={1,2,3,4,5,6,7,8,9,90}
 t2={90,100}
-t3=t1.union(t2)
+# t3=t1.union(t2)
+t3=t1.intersection(t2)
 print(t3)
