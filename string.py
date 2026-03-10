@@ -49,6 +49,9 @@
 # any()    --if one entry is present then true
 # sorted()   --sorted(k,reverse=True)
 # .format()  j="sum of {} and {} is {}".format(a,b,c)
+# hex()  --number to hex
+# oct()  --number to oct
+# bin()  --number to bin
 
 # x='abc'
 # y='def'
@@ -246,9 +249,26 @@
 # print(str)
 
 
-a=10
-b=10
-c=a+b
+# a=10
+# b=10
+# c=a+b
 # j="sum of {0} and {0} is {0}".format(a,b,c)
-j="{0:<15.2f}\n{1:^15.2f}\n{2:15.2f}".format(a,b,c)
-print(j)
+# j="{0:<15.2f}\n{1:^15.2f}\n{2:15.2f}".format(a,b,c)
+# print(j)
+
+
+# K=hex(255)
+# print(K)
+# K=oct(255)
+# print(K)
+# K=bin(255)
+# print(K)
+
+
+# K='FFFFFF'
+# K1=int(K,2)
+# K1=int(K,8)
+# K1=int(K[0:2],16)
+# K2=int(K[2:4],16)
+# K3=int(K[4:],16)
+# print(K1,K2,K3)
