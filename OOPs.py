@@ -14,6 +14,16 @@
 # 
 # - protected
 #   _varname
+# 
+# object as an arguments-
+#   use establish communication between two or more objects of same class as well as different class
+# 
+# 
+# 
+# 
+# 
+# 
+# 
 ################################################################################################################ 
 
 # class Student:
