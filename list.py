@@ -26,7 +26,7 @@
 # copy()  --create deep copy
 # deep copy
 # shallow copy
-# index(object,[si],[ei])
+# index(object,[si],[ei]) --find the index
 # count(object,[si],[ei])
 # reverse()
 # sort()
