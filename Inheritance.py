@@ -39,6 +39,26 @@
 # t=B()
 # - By default child class constructor implicity invokes the base class constructor
 # 
+# class A:
+#   def __init__(self):
+#       print("A Class")
+# 
+# class B(A):
+#   def __init__(self):
+#       print("B Class")
+# 
+# if one can create our own constructor then we have to 
+# call the constructor explicity with the help of super() keyword
+# super().__init__() must be the first statement in derive class constructor
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
 # 
 
 
@@ -178,41 +198,123 @@
 
 
 # Hybrid Inheritance###################################################
-class Company:
-    def getCompany(self):
-        self.__cn=input("Enter Company Nmae : ")
+# class Company:
+#     def getCompany(self):
+#         self.__cn=input("Enter Company Nmae : ")
 
-    def showCompany(self):
-        print(self.__cn)
+#     def showCompany(self):
+#         print(self.__cn)
     
 
-class ProductionOne(Company):
-    def getProductionOne(self):
-        self._one=int(input("Total Production One: "))
+# class ProductionOne(Company):
+#     def getProductionOne(self):
+#         self._one=int(input("Total Production One: "))
 
-    def showProductionOne(self):
-        print("Production One :", self._one)
+#     def showProductionOne(self):
+#         print("Production One :", self._one)
 
-class ProductionTwo(Company):
-    def getProductionTwo(self):
-        self._two=int(input("Total Production Two: "))
+# class ProductionTwo(Company):
+#     def getProductionTwo(self):
+#         self._two=int(input("Total Production Two: "))
 
-    def showProductionTwo(self):
-        print("Production Two :", self._two)
+#     def showProductionTwo(self):
+#         print("Production Two :", self._two)
 
-class TotalProduction(ProductionOne,ProductionTwo):
-    def getTotal(self):
-        self.getCompany()
-        self.getProductionOne()
-        self.getProductionTwo()
-        self.__total=self._one + self._two
+# class TotalProduction(ProductionOne,ProductionTwo):
+#     def getTotal(self):
+#         self.getCompany()
+#         self.getProductionOne()
+#         self.getProductionTwo()
+#         self.__total=self._one + self._two
 
-    def putTotal(self):
-        self.showCompany()
-        self.showProductionOne()
-        self.showProductionTwo()
-        print("Total Production : ", self.__total)
+#     def putTotal(self):
+#         self.showCompany()
+#         self.showProductionOne()
+#         self.showProductionTwo()
+#         print("Total Production : ", self.__total)
 
-C=TotalProduction()
-C.getTotal()
-C.putTotal() 
+# C=TotalProduction()
+# C.getTotal()
+# C.putTotal() 
+
+#######################################################################################
+# class A:
+#   def __init__(self):
+#       print("A Class")
+
+# class B(A):
+#   def __init__(self):
+#       super().__init__()
+#       print("B Class")
+
+# T=B()
+
+
+
+# class Student:
+#     def __init__(self, rollno, name):
+#         self.__rollno=rollno
+#         self.__name=name
+
+#     def showStudent(self):
+#         print(self.__rollno, self.__name)
+
+# class Bsc(Student):
+#     def __init__(self, rollno, name, p, c, m):
+#         super().__init__(rollno, name)
+#         self.__p=p
+#         self.__c=c
+#         self.__m=m
+
+#     def showMarks(self):
+#         self.showStudent()
+#         print(self.__p, self.__c, self.__m,)
+
+# T=Bsc(100, 'Peter', 56, 90, 78)
+# T.showMarks()
+
+
+
+# class Student:
+#     def __init__(self):
+#         self.__rollno=input("Enter Rollno :")
+#         self.__name=input("Enter Name :")
+
+#     def show(self):
+#         print(self.__rollno, self.__name)
+
+# class Bsc(Student):
+#     def __init__(self,):
+#         super().__init__()
+#         self.__p=int(input("Enter P Marks :"))
+#         self.__c=int(input("Enter C Marks :"))
+#         self.__m=int(input("Enter M Marks :"))
+
+#     def showMarks(self):
+#         super().show()
+#         print(self.__p, self.__c, self.__m,)
+
+# T=Bsc()
+# T.showMarks()
+
+
+
+# class Animal:
+#     def sound(self):
+#         print("Animal Sound")
+
+# class Dog(Animal):
+#     def sound(self):
+#         super().sound()
+#         print("Dog")
+
+# class Cat(Animal):
+#     def sound(self):
+#         super().sound()
+#         print('Cat Meows')
+
+
+# D=Dog()
+# D.sound()
+# C=Cat()
+# C.sound()
