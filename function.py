@@ -69,3 +69,40 @@
 # T=removeChar('eoeienhe','e')
 # print(T)
 
+
+# def add_tag(i,tag):
+#     L=('<',i,'>',tag,'</',i,'>')
+#     return ''.join(L)
+    
+
+# T=add_tag('i','Python')
+# print(T)
+
+
+
+# def insert_string_middle(tag,value):
+#     le=len(tag)//2
+#     L=tag[:le]+value+tag[le:]
+#     return L
+
+# T=insert_string_middle('{{}}','Python')
+# print(T)
+
+# def insert_end(value):
+#     return value[-2:]*4
+
+# T=insert_end('Python')
+# print(T)
+
+
+
+# def hex_to_color(color):
+#     L=[]
+#     for i in range(len(color)-1):
+#         if i % 2 == 0:
+#             L.append(color[i:i+2])
+
+#     return tuple(L)
+
+# T= hex_to_color('ABCDEF')
+# print(T)
