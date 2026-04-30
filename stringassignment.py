@@ -197,4 +197,88 @@
 
 
 
-#25###################################################
+#22####################################################
+# strr='hello'
+# print(''.join(sorted(strr)))
+
+
+
+#23####################################################
+# x="xxxxx\nyyyyy"
+# x=x.replace('\n','')
+# print(x)
+
+
+
+#24####################################################
+# strr='abcd'
+# I=input("Enter String : ")
+# print(strr.startswith(I))
+
+
+
+#25####################################################
+# strr = 'azAZ'
+# S = ''
+# for i in strr:
+#     val = ord(i)
+#     if val >= 119:
+#         val = 94
+#     elif val >= 87:
+#         val = 62
+#     S += chr(val + 3)
+
+# print(S)
+
+
+
+#26####################################################
+# strr='Python is a powerful programming language used for many applications'
+# def width(strr,w):
+#     strr2 = ''
+#     for i in range(0,len(strr),w):
+#         strr2 += strr[i:i+w] + '\n'
+    
+#     return strr2
+
+# print(width(strr,60))
+
+
+
+#27####################################################
+# strr = '  hello'
+# print(strr.lstrip())
+
+
+
+#28####################################################
+# strr='hello'
+# strinput = input("Enter String : ")
+# print(strinput+strr)
+
+
+
+#29####################################################
+# strr = 'hello'
+# print(strr.rjust(10,' '))
+
+
+
+#30####################################################
+# num=10.2382
+# print(f"%.2f"%num)
+
+
+
+#31####################################################
+# num=10.2382
+# if num > 0:
+#     print(f"+%.2f"%num)
+# else : 
+#     print(f"%.2f"%num)
+
+
+
+#32####################################################
+num=10.2382
+print(f"%.0f"%num)
