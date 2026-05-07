@@ -29,7 +29,6 @@
 # A=['MP','UP','HR','PB']
 # B=['Bhopal','Lucknow','Chandigarh','Chandigarh']
 # C=['600','700','800','300']
-
 # M=list(zip(B,C))
 # D=dict(zip(A,M))
 # print(D)

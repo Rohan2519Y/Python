@@ -335,3 +335,87 @@
 # strr='hello world'
 # L=strr.split(' ')
 # print(' '.join(sorted(L,reverse=True)))
+
+
+
+#41####################################################
+# strr="   Hello   "
+# lstrr=strr.strip()
+# print(lstrr)
+
+
+
+#42####################################################
+# strr='thequickbrownfoxjumpsoverthelazydog'
+# s=''
+# for i in strr:
+#     if i not in s and strr.count(i) > 1 :
+#         print(i, strr.count(i))
+#         s+=i
+
+
+
+#43####################################################
+# L=int(input("Enter Length  :"))
+# W=int(input("Enter Width  :"))
+# print("Area of Rectangle : ",L*W,'cm\u00b2',sep='')
+
+
+
+#44####################################################
+# strr="w3resource"
+# for i in strr:
+#     print(f"Current character {strr.index(i)} position at {i}")
+
+
+
+#45####################################################
+# strr=input("Enter String : ").lower()
+# A='abcdefghijklmnopqrstuvwxyz'
+# for i in A :
+#     if i not in strr:
+#         print("Not Found")
+#         break
+# else : 
+#     print("Contains All Letter")
+
+
+
+#46####################################################
+# strr = 'The quick brown fox jumps over the lazy dog'
+# L = strr.split(' ')
+# print(L)
+
+
+
+#47####################################################
+# num = int(input("Enter Number : "))
+# strr = 'HELLO'
+# lstr = strr[:num].lower() + strr[num:]
+# print(lstr)
+
+
+
+#48####################################################
+# strr = "32.054,23"
+# S=strr.replace('.','!')
+# S=S.replace(',','.')
+# S=S.replace('!',',')
+# print(S)
+
+
+
+#49####################################################
+# strr='thequickbrownfoxjumpsoverthelazydog'.lower()
+# s=''
+# for i in strr:
+#     if i not in s and i in 'aioue':
+#         print(i, strr.count(i))
+#         s+=i
+
+
+
+#50####################################################
+# strr = 'apple-banana-mango'
+# L = strr.rsplit('-',1)
+# print(L)
