@@ -82,6 +82,26 @@
 # search=lambda value_list:[fact(i) for i in value_list]
 # print(search(L))
 
-L=lambda n:[int(input("Enter Number : ")) for i in range(n)]
-T=L(5)
+# L=lambda n:[int(input("Enter Number : ")) for i in range(n)]
+# T=L(5)
+# print(T)
+
+
+# a = 10
+# b = 20
+# c = 30
+# K = f"{a} is Largest" if (a > b and a > c) else f"{b} is Largest" if(b > a and b > c) else f"{c} is Largest"
+# print(K)
+
+
+# E= [i for i in range(1,100) if i%2 == 0]
+# print(E)
+
+
+# K = lambda a, b: a if a>b else b
+# print(K(1,2))
+
+
+K = lambda a :[ i*a for i in range(1,11)]
+T=K(2)
 print(T)
