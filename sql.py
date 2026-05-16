@@ -86,15 +86,6 @@ import pymysql as sql
 #     print("Error : ", e)
 
 
-# Database my_industry
-# table products
-#   ProductId, ProductName, QuantityPerUnit, UnitPrice, UnitInStock, UnitsOnOrder, ReorderLevel, Discountinued, MFG Date
-# 
-# 
-# 
-# 
-# 
-
 
 # Show Data #####################################################################################################
 # try:
@@ -187,6 +178,91 @@ import pymysql as sql
 #     Record = SMT.fetchall()
 #     if Record : 
 #         print(Record)
+#     else : 
+#         print("Record Not Found")
+#     DB.close()
+
+# except Exception as e:
+#     print("Error : ", e)
+
+
+
+
+# Edit #####################################################################################################\
+# try:
+#     DB = sql.connect(
+#         host = 'localhost',
+#         port = 3306,
+#         user = 'root',
+#         password = '1234',
+#         database = 'PythonPractice',
+#         cursorclass = sql.cursors.DictCursor
+#     )
+
+#     SMT = DB.cursor()
+#     id = input("Enter Employee ID : ")
+#     Q = f'Select * from Employees where employeeid = {id}'
+#     SMT.execute(Q)
+#     Record = SMT.fetchone()
+#     if Record : 
+#         print("Employee ID : ",Record['employeeid'])
+#         print("1- Employee Name : ",Record['empname'])
+#         print("2- Employee City : ",Record['city'])
+#         print("3- Exit : ")
+#         ch = int(input("Enter Your Choice : "))
+#         pat = ''
+#         if ch == 1:
+#             en = input("Enter New Employee Name : ")
+#             pat = f"empname = '{en}'"
+#         elif ch == 2 :
+#             ec = input("Enter New City : ")
+#             pat = f"city = '{ec}'"
+#         elif ch == 3 : 
+#             print("Exit")
+#         else : 
+#             print("Wrong Option")
+
+#         if pat != '' :
+#             Q = f"Update employees set {pat} where employeeid = {id}"
+#             SMT.execute(Q)
+#             DB.commit()
+#             print("Employee Update Successfully")
+#     else : 
+#         print("Record Not Found")
+#     DB.close()
+
+# except Exception as e:
+#     print("Error : ", e)
+
+
+
+
+# Delete #####################################################################################################
+# try:
+#     DB = sql.connect(
+#         host = 'localhost',
+#         port = 3306,
+#         user = 'root',
+#         password = '1234',
+#         database = 'PythonPractice',
+#         cursorclass = sql.cursors.DictCursor
+#     )
+
+#     SMT = DB.cursor()
+#     id = input("Enter Employee ID : ")
+#     Q = f'Select * from Employees where employeeid = {id}'
+#     SMT.execute(Q)
+#     Record = SMT.fetchone()
+#     if Record : 
+#         print("Employee ID : ",Record['employeeid'])
+#         ch = input("Do you want to delete Y/N: ")
+#         if ch.lower() == 'y' :
+#             Q = f"Delete from employees where employeeid = {id}"
+#             SMT.execute(Q)
+#             DB.commit()
+#             print("Employee Deleted Successfully")
+#         else :
+#             print("Cancel")
 #     else : 
 #         print("Record Not Found")
 #     DB.close()
