@@ -269,3 +269,31 @@ import pymysql as sql
 
 # except Exception as e:
 #     print("Error : ", e)
+
+
+
+
+# Multiple Search #####################################################################################################
+try:
+    DB = sql.connect(
+        host = 'localhost',
+        port = 3306,
+        user = 'root',
+        password = '1234',
+        database = 'PythonPractice',
+        cursorclass = sql.cursors.DictCursor
+    )
+
+    SMT = DB.cursor()
+    id = tuple(input("Enter Employee City : ").split(','))
+    Q = f'Select * from Employees where city in {id}'
+    SMT.execute(Q)
+    Record = SMT.fetchone()
+    if Record : 
+        print(Record)
+    else : 
+        print("Record Not Found")
+    DB.close()
+
+except Exception as e:
+    print("Error : ", e)
