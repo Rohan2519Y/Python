@@ -286,9 +286,12 @@ try:
 
     SMT = DB.cursor()
     id = tuple(input("Enter Employee City : ").split(','))
-    Q = f'Select * from Employees where city in {id}'
+    if len(id) == 1:
+        Q = f"SELECT * FROM Employees WHERE city = '{id[0]}'"
+    else:
+        Q = f"SELECT * FROM Employees WHERE city IN {id}"
     SMT.execute(Q)
-    Record = SMT.fetchone()
+    Record = SMT.fetchall()
     if Record : 
         print(Record)
     else : 
