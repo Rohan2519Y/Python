@@ -29,12 +29,11 @@
 # webbrowser.open("file://" + os.path.abspath("tts.html"))
 # print("Opened in browser!")
 
-# sk_3320dbb6b7a89fa0f8f715e62b39f165bda97507056f3351
 
 
 from elevenlabs.client import ElevenLabs
 
-client = ElevenLabs(api_key="sk_3320dbb6b7a89fa0f8f715e62b39f165bda97507056f3351")
+client = ElevenLabs(api_key="key")
 
 audio = client.text_to_speech.convert(
     text="hello",
