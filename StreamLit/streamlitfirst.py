@@ -167,7 +167,8 @@ course = st.selectbox(
 skills = st.multiselect(
     "Select Skills",
     ["HTML", "CSS", "JS", "React", "Node"],
-    default=["React"]
+    default=["React"],
+    max_selections=2
 )
 
 rating = st.slider(
@@ -206,9 +207,29 @@ agree = st.checkbox(
 # -------------------------------------------------
 uploaded_file = st.file_uploader(
     "Upload File",
-    type=["png", "jpg", "pdf", "txt"],
+    type=["png", "jpg", "pdf", "txt", "mp3"],
     accept_multiple_files=False
 )
+
+# -------------------------------------------------
+# IMAGE
+# -------------------------------------------------
+# st.image(
+#     uploaded_file,
+#     width=400     
+# )
+
+# -------------------------------------------------
+# AUDIO
+# -------------------------------------------------
+# audio_file = open(str(uploaded_file),'rb')
+# audio_bytes = audio_file.read()
+# st.audio(audio_bytes, format='audio/mp3', start_time=0)
+
+# -------------------------------------------------
+# AUDIO
+# -------------------------------------------------
+# st.video('https://www.youtube.com/watch?v=7nGN11DW-b0')
 
 # -------------------------------------------------
 # CAMERA
