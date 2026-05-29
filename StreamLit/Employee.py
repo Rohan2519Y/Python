@@ -53,6 +53,14 @@ elif Menu == 'Insert' :
 
 elif Menu == 'Display' :
     st.title("Display Data")
+    st.title("Display")    
+    SMT.execute('Select * from employees')
+    Record = SMT.fetchall()
+    DB.close()
+    if Record :
+        st.dataframe(Record)
+    else :
+        st.error("Record Not Found")
 
 elif Menu == 'Update' :
     st.title("Update Data")
