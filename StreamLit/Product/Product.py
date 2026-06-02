@@ -2,7 +2,6 @@ import streamlit as st
 import pymysql as sql
 from streamlit_option_menu import option_menu
 
-
 try:
     DB = sql.connect(
         host = 'localhost',
@@ -22,14 +21,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-
-
 st.sidebar.title("Product")
-
-# menu = st.sidebar.radio(
-#     "Select Option",
-#     ["Home", "Display", "Insert", "Update", "Delete", "Search"]
-# )
 
 with st.sidebar:
     menu = option_menu(
